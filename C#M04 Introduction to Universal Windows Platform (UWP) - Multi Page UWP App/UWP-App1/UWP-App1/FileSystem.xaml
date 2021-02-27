@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="UWP_App1.FileSystem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Button x:Name="CreateAFile_BTN" Content="Create a file" Margin="238,165,0,0" VerticalAlignment="Top" Height="77" Width="257" FontSize="22" Click="CreateAFile_BTN_Click">
+            <Button.Background>
+                <AcrylicBrush TintColor="#FFEDDCD2"/>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <AcrylicBrush TintColor="#CC9C0A0A"/>
+            </Button.FocusVisualPrimaryBrush>
+        </Button>
+        <TextBox x:Name="userInput" HorizontalAlignment="Left" Margin="560,285,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="800" Background="#FFDDBEA9"/>
+        <TextBox x:Name="FilePath_TxtBox" HorizontalAlignment="Left" Margin="560,164,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="800" Background="#FFEDDCD2"/>
+
+        <Button x:Name="ReadFile_BTN" Content="Read text file" Margin="240,430,0,0" VerticalAlignment="Top" Height="77" Width="257" FontSize="22" Click="ReadFile_BTN_Click">
+            <Button.Background>
+                <AcrylicBrush TintColor="#FFA5A58D"/>
+            </Button.Background>
+            <Button.FocusVisualPrimaryBrush>
+                <AcrylicBrush TintColor="#CC9C0A0A"/>
+            </Button.FocusVisualPrimaryBrush>
+        </Button>
+        <TextBox x:Name="readBox" HorizontalAlignment="Left" Margin="563,430,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="445" Width="800" Background="#FFDDBEA9"/>
+
+        <TextBlock x:Name="label" HorizontalAlignment="Left" Margin="300,74,0,0" Text="Multiple Pages Universal Windows Platform APP" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="1009" FontSize="36" FontFamily="Broadway" FontWeight="Bold"/>
+    </Grid>
+
+
+
+
+</Page>
